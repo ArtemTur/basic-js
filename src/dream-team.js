@@ -19,13 +19,13 @@ function createDreamTeam(members) {
   let team = [];
   let arr = Array.from(members);
   arr.forEach(element => {
-    if (typeof(element) !== "string" || typeof(element) === "boolean" || typeof(element) === "object" || typeof(element) === "undefined" || typeof(element) === null){
+    if (typeof(element) !== "string" || typeof(element) === "boolean" || typeof(element) === "object" || typeof(element) === "undefined" || typeof(element) === "null"){
       return false
     } else {team += element[0];
     }
   });
   team.toString().toUpperCase();
-  return team.sort((a, b) => a.localeCompare(b));
+  return team.sort;
 }
 
 
