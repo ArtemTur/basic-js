@@ -18,9 +18,11 @@ const { NotImplementedError } = require('../extensions/index.js');
 function repeater(str, options) {
   let object = new Object(options);
  let string = str + object.addition + object.additionSeparator;
- let string2 = string.repeat.repeatTimes.split.object.separator;
- let string3 = string2.repeat.additionRepeatTimes;
- return string3
+ let string2 = string.repeat(object.repeatTimes);
+ let string3 = string2.split();
+ let string4 = string3.join(object.separator)
+ let string5 = string4.repeat(object.additionRepeatTimes);
+ return string5;
 }
 
 module.exports = {
